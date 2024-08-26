@@ -72,6 +72,8 @@ flutter:
      - assets/images/IntroImg.jpg
      - assets/images/chat.png
      - assets/icons/github.png
+     - assets/animations/Loder.json
+     - assets/animations/Youga.json
      - assets/animations/animation.json
      - assets/animations/IntoAni.json
 

@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 6), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
     });
@@ -30,13 +30,26 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget _buildUI() {
     return Center(
-      child: SizedBox(
-        width: 350,
-        height: 350,
-        child: Lottie.asset(
-          "assets/animations/animation.json",
-          repeat: false,
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(
+            width: 350,
+            height: 350,
+            child: Lottie.asset(
+              "assets/animations/Youga.json",
+              repeat: false,
+            ),
+          ),
+          SizedBox(
+            width: 100,
+            height: 100,
+            child: Lottie.asset(
+              "assets/animations/Loder.json", // Replace with your loader animation path
+              repeat: true,
+            ),
+          ),
+        ],
       ),
     );
   }
